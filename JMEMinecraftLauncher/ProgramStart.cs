@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace JMEMinecraftLauncher
 {
-    static class Program
+    static class ProgramStart
     {
+        public static MainWindow form1;
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
@@ -15,8 +16,10 @@ namespace JMEMinecraftLauncher
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.SetCompatibleTextRenderingDefault(true);
+            form1 = new MainWindow();
+            Application.Run(form1);
+            
         }
     }
 }

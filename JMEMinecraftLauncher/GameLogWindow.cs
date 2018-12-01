@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace JMEMinecraftLauncher
 {
-    public partial class Form1 : Form
+    public partial class GameLogWindow : Form
     {
-        public Form1()
+        public GameLogWindow()
         {
             InitializeComponent();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
